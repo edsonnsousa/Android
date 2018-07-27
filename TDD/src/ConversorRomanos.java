@@ -13,7 +13,7 @@ public class ConversorRomanos {
     }};
     
     public int converte(String numeroRomano) {
-        int acumulador = 0;
+        int acumula = 0;
         int simboloDaDireita = 0;
 
         for(int i = numeroRomano.length() - 1; i >= 0; i--) {
@@ -22,12 +22,12 @@ public class ConversorRomanos {
             
             // tornar o o numero negativo
             int multiplicador = 1;
-            if(atual < simboloDaDireita) multiplicador = -1;
-            acumulador += valores.get(numeroRomano.charAt(i)) * multiplicador;
+            if(atual < simboloDaDireita) multiplica = -1;
+            acumula += valores.get(numeroRomano.charAt(i)) * multiplica;
             
             // atualiza o da direita
             simboloDaDireita = atual;
         }
-        return acumulador;
+        return acumula;
     }
 }
