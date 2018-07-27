@@ -25,4 +25,11 @@ public class ConversorRomanosTeste {
        
        assertEquals(20, resultado);
 }
+    @Test
+    public void converteOSimboloXI() {
+    	ConversorRomanos conversor = new ConversorRomanos();
+    	int resultado = conversor.converte("XI");
+       
+       assertEquals(11, resultado);
+}
 }
