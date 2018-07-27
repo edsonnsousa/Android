@@ -19,7 +19,7 @@ public class ConversorRomanosTeste {
        assertEquals(5, resultado);
 }
     @Test
-    public void converteOSimboloII() {
+    public void converteOSimboloXX() {
     	ConversorRomanos conversor = new ConversorRomanos();
     	int resultado = conversor.converte("XX");
        
